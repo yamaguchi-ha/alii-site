@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alii [アリー] | 北浦和の隠れ家プライベートエステサロン</title>
+
+    <link rel="icon" href="image/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="image/favicon.png" alt="logo">
+                <p>Alii</p>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#staff">Staff</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#access">Access</a></li>
+                </ul>
+            </nav>
+            <a href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000786040" target="_blank" class="btn-reserve-header">ご予約</a>
+        </div>
+    </header>
+
+    <!-- Main Visual -->
+    <section class="mv">
+        <div class="mv-inner">
+            <div class="mv-inner-text">
+                <h2>ガチガチの首・肩コリに。<br>深層筋から整える、大人の隠れ家サロン</h2>
+                <p>ー 北浦和駅徒歩4分。独自の「深筋骨メソッド」で身体の芯から解き放たれる。ー</p>
+            </div>
+            <a href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000786040" target="_blank" class="btn-oval">サロンの空き状況を見る</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- News & Blog -->
+        <section id="news" class="reveal">
+            <div class="info-split">
+                <div>
+                    <div class="section-header">
+                        <h2>News<span>お知らせ</span></h2>
+                    </div>
+                    <ul class="news-list-mini">
+                        <li class="news-item-mini">
+                            <span class="news-date"></span>
+                            <span class="news-title"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="section-header">
+                        <h2>Blog<span>ブログ</span></h2>
+                    </div>
+                    <ul class="news-list-mini">
+                        <li class="news-item-mini">
+                            <span class="news-date"></span>
+                            <span class="news-title"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Salon Info -->
+    <section id="about" class="bg-beige reveal">
+        <div class="container">
+            <div class="intro-flex">
+                <div class="intro-img-arc"></div>
+                <div class="intro-text">
+                    <div class="section-header">
+                        <h2>Concept<span>サロンのこだわり</span></h2>
+                    </div>
+                    <h3>その場しのぎではない、<br>根本的な「軽さ」を。</h3>
+                    <p>Aliiは、日々を忙しく過ごす大人の女性のための完全プライベートエステサロンです。</p>
+                    <p>「どこに行っても肩コリが楽にならない」「顔のむくみが取れない」そんなお悩みに、解剖学に基づいた深層筋アプローチで応えます。アンティークなインテリアに囲まれた静かな空間で、自分を労わる時間をお過ごしください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Menu Section -->
+    <section id="menu" class="reveal">
+        <div class="container">
+            <div class="section-header" style="text-align: center;">
+                <h2 style="justify-content: center;">Menu<span>メニュー一覧</span></h2>
+            </div>
+            <div class="interactive-menu-container">
+                <!-- フィルタリング・ナビ -->
+                <div class="filter-nav">
+                    <button class="filter-btn active" data-filter="all">ALL</button>
+                    <button class="filter-btn" data-filter="facial">FACIAL</button>
+                    <button class="filter-btn" data-filter="body">BODY</button>
+                    <button class="filter-btn" data-filter="other">OTHER</button>
+                </div>
+                <p>※メニューや料金は2026年3月時点のものです。<br>詳細はホットペッパービューティをご確認ください。</p>
+
+                <!-- 動的メニュー表示エリア -->
+                <div id="dynamic-menu-grid">
+                    <!-- JSによりここにカードが生成されます -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Section -->
+    <section id="staff" class="bg-beige reveal">
+        <div class="container">
+            <div class="staff-wrap">
+                <div class="section-header" style="text-align: center;">
+                    <h2 style="justify-content: center;">Staff<span>セラピスト紹介</span></h2>
+                </div>
+                <img src="image/image06.jpg" alt="Owner" class="staff-img">
+                <h3>Owner Therapist</h3>
+                <p style="margin-top: 20px; font-size: 0.95rem;">
+                    「いくつになっても、自分の身体を好きでいてほしい」そんな想いでAliiをオープンしました。<br>私自身が経験した身体の変化や悩みを活かし、一人ひとりに最適な施術を提案させていただきます。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="gallery" class="reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery<span>フォトギャラリー</span></h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-img-box">
+                        <img src="image/image03.jpg" alt="リラックスできる待合スペース">
+                    </div>
+                    <p class="gallery-text">リラックスできる待合スペース</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-box">
+                        <img src="image/image09.jpg" alt="施術後のお直しはこちらで">
+                    </div>
+                    <p class="gallery-text">施術後のお直しはこちらで</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-box">
+                        <img src="image/image08.jpg" alt="お子様連れ大歓迎です">
+                    </div>
+                    <p class="gallery-text">お子様連れ大歓迎です</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-box">
+                        <img src="image/image02.jpg" alt="あなただけの癒やしのひとときを">
+                    </div>
+                    <p class="gallery-text">あなただけの癒やしのひとときを</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram -->
+    <section id="instagram" class="bg-beige reveal">
+        <div class="container">
+            <div class="section-header" style="text-align: center;">
+                <h2 style="justify-content: center;">Instagram<span>公式インスタグラム</span></h2>
+            </div>
+            <div class="insta-box">
+                <p>Instagram Widget Area</p>
+                <p style="font-size: 0.8rem;">@alii_private_salon</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access -->
+    <section id="access" class="reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2>Access<span>アクセス</span></h2>
+            </div>
+            <div class="access-layout">
+                <div class="map-box">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6466.115451066773!2d139.6411659749863!3d35.872102207059044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5Z-8546J55yM44GV44GE44Gf44G-5biC5rWm5ZKM5Yy65YWD55S6MuS4geebrjQtNCDjgqjjgrnjg4bjg7zjg4hZYW1hemFraQ!5e0!3m2!1sja!2sus!4v1773567948325!5m2!1sja!2sus"
+                        width="600" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="access-table">
+                    <dl>
+                        <dt>住所</dt>
+                        <dd>埼玉県さいたま市浦和区元町2丁目4-4<br>エステートYamazaki 3F</dd>
+                    </dl>
+                    <dl>
+                        <dt>アクセス</dt>
+                        <dd>JR京浜東北線「北浦和駅」西口より徒歩4分</dd>
+                    </dl>
+                    <dl>
+                        <dt>営業時間</dt>
+                        <dd>10:00 〜 21:00 (最終受付 19:30)</dd>
+                    </dl>
+                    <dl>
+                        <dt>定休日</dt>
+                        <dd>不定休</dd>
+                    </dl>
+                    <!-- <dl>
+                        <dt>電話番号</dt>
+                        <dd>070-9105-7972</dd>
+                    </dl> -->
+                    <dl>
+                        <dt>LINE</dt>
+                        <dd>
+                            <p> 施術中で電話にでれないことがございます。<br>ご連絡はLINEからお願いします。</p>
+                            <a href="https://line.me/ti/p/4L9N2j5bGa" target="_blank" rel="noopener noreferrer">
+                                <img src="image/line.png" alt="LINEで予約・お問い合わせ" class="line">
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="bottom-cta">
+        <div class="container">
+            <h2>ご予約・お問い合わせ</h2>
+            <p style="margin-top: 15px; opacity: 0.9;">空席状況の確認・予約はホットペッパービューティーから承っております。</p>
+            <a href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000786040" target="_blank" class="btn-white-oval">ホットペッパーで予約</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Alii</div>
+            <p style="margin-top: 20px; font-size: 0.7rem; opacity: 0.5;">&copy; 2026 Alii Private Salon. All Rights
+                Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
