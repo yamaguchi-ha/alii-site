@@ -211,7 +211,13 @@
             justify-content: center;
             gap: 15px;
             margin-bottom: 40px;
-            flex-wrap: wrap;
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: none;
+        }
+
+        .filter-nav::-webkit-scrollbar {
+            display: none;
         }
 
         .filter-btn {
@@ -336,6 +342,16 @@
                 padding: 10px 0 5px;
                 justify-content: center;
 
+            }
+
+            .filter-nav {
+                justify-content: flex-start;
+                margin-bottom: 20px;
+
+            }
+
+            .filter-btn {
+                padding: 8px 20px;
             }
         }
 
