@@ -205,6 +205,11 @@
             margin-top: 40px;
         }
 
+        .interactive-menu-container a:hover {
+            color: var(--accent-color);
+            opacity: 0.8;
+        }
+
         /* フィルタボタン */
         .filter-nav {
             display: flex;
